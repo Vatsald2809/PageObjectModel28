@@ -10,16 +10,16 @@ import com.crm.qa.base.TestBase;
 public class LoginPage extends TestBase{
 	
 	//Page Factory - OR:
-	@FindBy(name="username")
+	@FindBy(name="email")
 	WebElement username;
 	
 	@FindBy(name="password")
 	WebElement password;
 	
-	@FindBy(xpath="//input[@type='submit']")
+	@FindBy(xpath="//div[text()='Login']")
 	WebElement loginBtn;
 	
-	@FindBy(xpath="//button[contains(text(),'Sign Up')]")
+	@FindBy(xpath="//div[text()='No Account? Registration takes only a few seconds? ']")
 	WebElement signUpBtn;
 	
 	@FindBy(xpath="//img[contains(@class,'img-responsive')]")
