@@ -20,7 +20,7 @@ public class FreeCrmTest {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
-		System.setProperty("webdriver.chrome.driver", "C:/QA Classes/SeleniumJars/chromedriver.exe");
+		System.setProperty("webdriver.gecko.driver", "C:/QA Classes/SeleniumJars/geckodriver.exe");
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
 		driver.get("https://www.freecrm.com/index.html");
